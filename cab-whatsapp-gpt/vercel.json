@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "api/respond.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/respond.py"
+    }
+  ]
+}
